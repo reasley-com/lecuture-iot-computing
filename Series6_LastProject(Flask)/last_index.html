@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Temperature and humidity Graph</title>
+        <script src="{{ url_for('static', filename='jquery-1.8.3.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='highstock.js') }}"></script>
+        <script src="{{ url_for('static', filename='highcharts-more.js') }}"></script>
+        <script src="{{ url_for('static', filename='exporting.js') }}"></script>
+	</head>
+    
+	<body>
+        <script type="text/javascript">
+        var categories = [];
+        var iss = {{Timestamp}};
+		$(function () {
+            for(var i=0; i<iss.length; i++){
+                var date = new Date(iss[i]*1000);
+                var day = date.getDay();
+                var month = date.getMonth()+1;
+                var hours = date.getHours();
+                var minutes = "0" + date.getMinutes();
+                var seconds = "0" + date.getSeconds();
+                var formattedTime = month + '-' + day + ' ' + hours + ':' + minutes.substr(-2);
+                //var formattedTime = month + '-' + day + ' ' + hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+                categories.push(formattedTime);
+            }
+            
+            Highcharts.chart('container', {
+                chart: {
+                    type: 'line'
+                },
+                title: {
+                    text: 'Monthly Average Temperature'
+                },
+                subtitle: {
+                    text: 'Source: WorldClimate.com'
+                },
+                xAxis: {
+                    categories: categories
+                },
+                yAxis: {
+                    title: {
+                        text: 'Temperature (°C)'
+                    }
+                },
+                plotOptions: {
+                    line: {
+                        dataLabels: {
+                            enabled: true
+                        },
+                        enableMouseTracking: false
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    data: {{Humidity}}
+                }, {
+                    name: 'London',
+                    data: {{Temperature}}
+                }]
+            });
+        });
+		</script>
+        <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+	</body>
+</html>
