@@ -1,0 +1,4 @@
+cryptography==2.5
+pyjwt==1.7.1
+paho-mqtt==1.4.0
+RPi.GPIO==0.7.0
