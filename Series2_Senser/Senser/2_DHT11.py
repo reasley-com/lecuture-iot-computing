@@ -10,9 +10,9 @@ while True:
         humidity = dhtDevice.humidity
         print("Temp: {:.1f} F / {:.1f} C    Humidity: {}% ".format(
                 temperature_f, temperature_c, humidity))
- 
-    except RuntimeError as error:
         time.sleep(2.0)
-        continue
- 
-    time.sleep(2.0)
+        
+  except KeyboardInterrupt:
+    pass
+    print('Exit with ^C. Goodbye!')
+    exit()
