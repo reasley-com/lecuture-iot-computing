@@ -5,8 +5,7 @@
 ㅤ
 
 ## Features
-- Just File Upload Your Local Database
-- That is. Done.
+- 
 
 
 ![image](https://user-images.githubusercontent.com/33018600/116790473-49faa200-aaef-11eb-8234-32c55c909e5e.png)
@@ -26,25 +25,3 @@ We are trying to provide a variety of services.
 ㅤ
 ㅤ
 ㅤ
-
-## Modules
-Flask-based web module
-
-
-| Module | README |
-| ------ | ------ |
-| Flask | https://pypi.org/project/Flask/ |
-| pymongo |  |
-| Girdfs |  |
-| bson |  |
-| base64 |  |
-ㅤ
-ㅤ
-ㅤ
-
-
-## Page appearance
-- Normal Upload
-- Girdfs Upload
-![image](https://user-images.githubusercontent.com/33018600/118010264-d3c92b80-b389-11eb-8dfe-1b0a44d0ff1c.png)
-
