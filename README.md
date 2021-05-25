@@ -5,7 +5,7 @@
 ## ✨ Features
 - It is the RaspberryPi Project File.
 - This is lecture data
-- Lecuture Link > https://www.youtube.com/watch?v=a6BUsmsvcc4&list=PL1jdJcP6uQtueCXfbWI7-WMOCKqLscmNP
+- Lecuture Link > [Youtube](https://www.youtube.com/watch?v=a6BUsmsvcc4&list=PL1jdJcP6uQtueCXfbWI7-WMOCKqLscmNP)
 
 
 ![image](https://user-images.githubusercontent.com/33018600/116790473-49faa200-aaef-11eb-8234-32c55c909e5e.png)
@@ -14,8 +14,29 @@
 
 ## 💠 Directory Structure
 ```
-📁lib
-└── 📄main.dart
+📁Series2_Senser
+├── 📁Drawing
+│   ├── 📄1_LED.PNG
+│   ├── 📄2_DHT11.PNG
+│   ├── 📄3_PiezoBuzzer.PNG
+│   ├── 📄4_HC-SR04.PNG
+│   ├── 📄5_ServoMotor.PNG
+│   ├── 📄6_HC-SR501.PNG
+│   └── 📄7_PhotoResistor.PNG
+├── 📁Senser
+│   ├── 📄1_LED.py
+│   ├── 📄2_DHT11.py
+│   ├── 📄3_PiezoBuzzer.py
+│   ├── 📄4_HC-SR04.py
+│   ├── 📄5_ServoMotor.py
+│   ├── 📄6_HC-SR501.py
+│   └── 📄7_PhotoResistor.py
+│
+📁Series3_Camera(FireStorage)
+📁Series3_Camera
+📁Series6_GCP(IoT Core)
+📁Series6_LastProject(DHT11 Reminder)
+📁Series6_LastProject(Flask)
 ```
 ㅤ
 
