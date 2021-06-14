@@ -5,7 +5,7 @@
 ## ✨ Features
 - It is the RaspberryPi Project File.
 - This is lecture data
-- Lecuture Link [Youtube](https://www.youtube.com/watch?v=a6BUsmsvcc4&list=PL1jdJcP6uQtueCXfbWI7-WMOCKqLscmNP)
+- Lecuture Link is [Youtube](https://www.youtube.com/watch?v=a6BUsmsvcc4&list=PL1jdJcP6uQtueCXfbWI7-WMOCKqLscmNP)
 
 
 ![image](https://user-images.githubusercontent.com/33018600/116790473-49faa200-aaef-11eb-8234-32c55c909e5e.png)
