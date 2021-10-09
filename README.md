@@ -47,7 +47,7 @@
 | RaspberryPi | 4B+ |
 | Framework | Raspberry Pi OS with desktop • March 4th 2021 |
 | Engine | revision • 05e680e202 |
-
+| Language | Python • 3.6.4 |
 
 ㅤ
 ㅤ
